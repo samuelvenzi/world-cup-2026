@@ -268,8 +268,9 @@ const SPECIAL_SECTIONS = [
 function getTeamStickers(code) {
   return [
     { code: `${code}1`, name: 'Escudo (Foil)', isSpecial: true },
-    { code: `${code}2`, name: 'Foto da Equipe', isSpecial: false },
-    ...Array.from({ length: 18 }, (_, i) => ({ code: `${code}${i + 3}`, name: `Jogador ${i + 1}`, isSpecial: false })),
+    ...Array.from({ length: 11 }, (_, i) => ({ code: `${code}${i + 2}`, name: `Jogador ${i + 1}`, isSpecial: false })),
+    { code: `${code}13`, name: 'Foto da Equipe', isSpecial: false },
+    ...Array.from({ length: 7 }, (_, i) => ({ code: `${code}${i + 14}`, name: `Jogador ${i + 12}`, isSpecial: false })),
   ];
 }
 
